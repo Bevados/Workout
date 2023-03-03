@@ -1,0 +1,71 @@
+@import './_variables.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+*::-webkit-input-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*::-ms-input-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-width: 320px;
+	font-family: $default-font;
+	font-size: 18px;
+	line-height: 1.65;
+	color: $white;
+	background-color: $black;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+.img-responsive {
+	display: block;
+	min-width: 100%;
+	height: auto;
+}
+
+#root {
+	height: 100%;
+}
