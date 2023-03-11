@@ -7,9 +7,14 @@
 
 
 	> button {
+		font-size: 29px;
 		border: none;
 		background-color: transparent;
 		outline: none;
 		cursor: pointer;
+
+		> svg {
+			fill: #fff;
+		}
 	}
 }

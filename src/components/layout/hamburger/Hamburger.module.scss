@@ -3,12 +3,24 @@
 
 .wrapper {
 	position: relative;
+
 	button {
 		background-color: transparent;
 		border: none;
 		outline: none;
 		cursor: pointer;
+		font-size: 40px;
+		> svg > path {
+			fill: #fff;
+		}
 	}
+
+	// > button {
+	// 	font-size: 30px;
+	// 	svg {
+	// 		fill: #fff;
+	// 	}
+	// }
 }
 
 .menu {

@@ -1,12 +1,22 @@
-import { useAuth } from '../../../hooks/useAuth'
-import styles from './Header.module.scss'
-import {FiArrowLeft} from 'react-icons/fi'
-import Hamburger from '../hamburger/Hamburger'
+import { IoMdArrowBack } from 'react-icons/io'
 
-const Header = ({backLink}) => {
+
+
+import { useAuth } from '../../../hooks/useAuth';
+
+
+
+import Hamburger from '../hamburger/Hamburger';
+
+
+
+import styles from './Header.module.scss';
+
+
+const Header = ({ backLink }) => {
 	// TODO: useHistory hook
 
-	const {isAuth} = useAuth();
+	const { isAuth } = useAuth()
 
 	return (
 		<header className={styles.header}>
@@ -15,7 +25,7 @@ const Header = ({backLink}) => {
 					console.log('fff')
 				}}
 			>
-				<FiArrowLeft />
+				<IoMdArrowBack />
 			</button>
 			{/* user profile */}
 			<Hamburger />
