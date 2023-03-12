@@ -69,3 +69,35 @@ img {
 #root {
 	height: 100%;
 }
+
+.dark-link {
+	margin-bottom: 0.5rem;
+	display: block;
+	width: 100%;
+	text-align: right;
+	text-decoration: none;
+	color: $dark-accent;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: darken($accent, 10%);
+	}
+}
+
+.wrapper-inner-page {
+	margin: 0 auto;
+	padding: 40px 30px;
+	min-width: 560px;
+	widows: 100%;
+	text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}

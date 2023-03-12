@@ -1,6 +1,7 @@
-import Layout from './components/layout/Layout';
+import Layout from '../../layout/Layout';
 
-function App() {
+
+function Home() {
 	return (
 		<>
 		<Layout>
@@ -11,4 +12,4 @@ function App() {
 	)
 }
 
-export default App
+export default Home
