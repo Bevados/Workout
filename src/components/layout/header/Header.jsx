@@ -1,4 +1,6 @@
-import { IoMdArrowBack } from 'react-icons/io'
+import { IoMdArrowBack } from 'react-icons/io';
+import { SlUser } from 'react-icons/sl'
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 
@@ -13,20 +15,30 @@ import Hamburger from '../hamburger/Hamburger';
 import styles from './Header.module.scss';
 
 
-const Header = ({ backLink }) => {
-	// TODO: useHistory hook
-
+const Header = ({ backLink = '' }) => {
+	const { pathname } = useLocation()
 	const { isAuth } = useAuth()
+	const navigate = useNavigate()
 
 	return (
 		<header className={styles.header}>
-			<button
-				onClick={() => {
-					console.log('fff')
-				}}
-			>
-				<IoMdArrowBack />
-			</button>
+			{pathname !== '/' ? (
+				<button
+					onClick={() => {
+						navigate(backLink)
+					}}
+				>
+					<IoMdArrowBack />
+				</button>
+			) : (
+				<button
+					onClick={() => {
+						navigate('/profile')
+					}}
+				>
+					<SlUser />
+				</button>
+			)}
 			{/* user profile */}
 			<Hamburger />
 		</header>

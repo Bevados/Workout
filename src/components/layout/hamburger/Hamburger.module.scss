@@ -9,18 +9,11 @@
 		border: none;
 		outline: none;
 		cursor: pointer;
-		font-size: 40px;
+		font-size: 30px;
 		> svg > path {
 			fill: #fff;
 		}
 	}
-
-	// > button {
-	// 	font-size: 30px;
-	// 	svg {
-	// 		fill: #fff;
-	// 	}
-	// }
 }
 
 .menu {
@@ -31,7 +24,7 @@
 	display: none;
 	min-width: 116px;
 	animation: opacity 0.4s;
-	font-size: 14px;
+	font-size: 16px;
 	box-shadow: $bx-16;
 	background-color: #fff;
 	border-radius: 10px 0 10px 10px;
@@ -42,6 +35,10 @@
 
 	> ul {
 		list-style: none;
+
+		button {
+			font-size: 16px;
+		}
 
 		a {
 			color: #000;
