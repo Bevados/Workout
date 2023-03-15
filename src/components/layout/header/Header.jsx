@@ -1,19 +1,12 @@
-import { IoMdArrowBack } from 'react-icons/io';
+import { IoMdArrowBack } from 'react-icons/io'
 import { SlUser } from 'react-icons/sl'
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom'
 
+import { useAuth } from '../../../hooks/useAuth'
 
+import Hamburger from '../hamburger/Hamburger'
 
-import { useAuth } from '../../../hooks/useAuth';
-
-
-
-import Hamburger from '../hamburger/Hamburger';
-
-
-
-import styles from './Header.module.scss';
-
+import styles from './Header.module.scss'
 
 const Header = ({ backLink = '' }) => {
 	const { pathname } = useLocation()
